@@ -16,5 +16,7 @@ First, download the project either in a .zip file or forking it locally. Once yo
 To run the test using vitest, run the following command `npm run test`.
 
 ## Running StoryBook
-You can run the project's StoryBook instance by running the following command: `npm run storybook`
+You can run the project's StoryBook instance by running the following command: `npm run storybook`. It should be running afterwards on the port 6006.
+![image](https://github.com/franciscoluna-28/testing-learning/assets/87947841/9a1ed54a-4cb0-451b-bcba-2766f1192cea)
+
 
