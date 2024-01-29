@@ -13,4 +13,9 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Primary: Story = (args) => <Button {...args} />;
+export const Primary: Story = {
+  render: (props) => <Button {...props}>Button</Button>
+}
+export const Secondary: Story = {
+  render: (props) => <Button variant="outline" {...props}>Button</Button>
+}
