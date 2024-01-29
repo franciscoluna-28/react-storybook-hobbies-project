@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+## Project Overview
+This is a really simple project that allows you to find activities using [Bored API](https://www.boredapi.com) created using `vite` along with `react` and `typescript + swc`. The idea of this project was to learn the following libraries and technologies to further improve my frontend development skills and develop stronger testing and debugging skills:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- StoryBook
+- React Testing Library
+- Vitest
+- clsx
+- tailwind-merge
 
-Currently, two official plugins are available:
+![Opera Instantánea_2024-01-28_183916_localhost](https://github.com/franciscoluna-28/testing-learning/assets/87947841/c96467a6-4cb6-45eb-ae45-fb12e09d4e11)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Running the Project
+First, download the project either in a .zip file or forking it locally. Once you have the project, install the required dependencies using `npm install`. To run the project use the command `npm run dev`.
 
-## Expanding the ESLint configuration
+## Running the Tests
+To run the test using vitest, run the following command `npm run test`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Running StoryBook
+You can run the project's StoryBook instance by running the following command: `npm run storybook`. It should be running afterwards on the port 6006.
+![image](https://github.com/franciscoluna-28/testing-learning/assets/87947841/9a1ed54a-4cb0-451b-bcba-2766f1192cea)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
