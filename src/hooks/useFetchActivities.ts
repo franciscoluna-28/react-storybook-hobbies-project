@@ -5,7 +5,7 @@ import {
   BoredActivity,
 } from "../types/types";
 
-const API_ENDPOINT = "http://www.boredapi.com/api/activity/";
+const API_ENDPOINT = "https://www.boredapi.com/api/activity/";
 
 export function useFetchActivities(type: ActivityType) {
   const [activities, setActivities] = useState<BoredActivity[] | []>([]);
@@ -15,7 +15,7 @@ export function useFetchActivities(type: ActivityType) {
     try {
       if (!VALID_ACTIVITY_TYPES.includes(type)) {
         console.error(
-          "Tipo de actividad no válido. Por favor, elija uno de los siguientes tipos:",
+          "Invalid activity type. Please, choose one of the existing ones:",
           VALID_ACTIVITY_TYPES
         );
         return;
