@@ -14,8 +14,8 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
-  render: (props) => <Button {...props}></Button>
-}
+  render: (props) => <Button {...props}></Button>,
+};
 export const Secondary: Story = {
-  render: (props) => <Button variant="outline" {...props}></Button>
-}
+  render: (props) => <Button variant="outline" {...props}></Button>,
+};
